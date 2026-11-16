@@ -1,0 +1,2 @@
+# Direct development dependency; not a complete environment lock.
+pytest==8.3.5
