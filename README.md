@@ -1,7 +1,11 @@
-# AAI-590: Radio intrusion detection reliability
+# AAI-590: Intrusion detection with vendor-restricted O-RAN telemetry
 
-Working title: **What Did the Detector Really Learn? Shortcut Audit and
-Degraded-Telemetry Robustness of Radio-Based Intrusion Detection in 5G O-RAN.**
+Working title: **Intrusion Detection with Vendor-Restricted O-RAN Telemetry**.
+Primary question confirmed by Gaurav on 2026-11-17: how reliably can detection
+operate with vendor-restricted measurements, and when should it abstain?
+See [the scope clarification](docs/research_scope.md). Shortcut checks support
+evaluation validity; dropped/stale-report scenarios are secondary. No vendor
+capability profile or restriction experiment has yet been validated.
 
 This workspace supports Gaurav's threat modeling, evaluation protocol, and
 abstention policy responsibilities. Nitendra owns ML baselines, GRU/TCN models,
@@ -11,6 +15,8 @@ Start each session with [the checklist](planning/checklist.md) and
 [the progress log](docs/progress.md). The checklist is the task status authority.
 For GitHub/Drive sharing and teammate onboarding, use the
 [handoff guide](docs/handoff.md).
+Its [November 24 EDA update instructions](docs/handoff.md#november-24-eda-update)
+show exactly which two files to add to Drive and where teammates restore them.
 
 ## Current state
 
@@ -22,6 +28,7 @@ performance experiment has been executed here. Evaluation definitions EP-1
 through EP-6 are approved; quality parameters and teammate interfaces remain gated.
 
 - [Dataset inventory and evidence gaps](docs/dataset_inventory.md)
+- [EDA cleaning ledger and interpretation follow-up](docs/eda_cleaning_addendum.md)
 - [Reviewed bounded threat model](docs/threat_model.md)
 - [Abstention-policy draft and pending decisions](docs/abstention_policy.md)
 - [AP-2 input proposal for teammate review](docs/abstention_input_proposal.md)
@@ -80,8 +87,11 @@ For all three audits in one place, open
 [00_combined_dataset_audit.ipynb](notebooks/00_combined_dataset_audit.ipynb).
 Select Python 3.11+ (including your rocm-jupyter kernel), restart once and
 Run All. Do not restart between parts. It includes the 23 original nonempty
-code cells unchanged, with a contents list and sequential sections. Narrative
-decision gates are historical; current approvals live in the linked documents
+code cells unchanged, with a contents list and sequential sections.
+The November 24 Part 4 adds one descriptive-summary cell (24 code cells total)
+and links the cleaning/interpretation ledger. Existing result manifests must
+be restored under results/ to execute that section. Original
+decision-gate text describes the audit stage; current approvals live in the linked documents
 and checklist. The three original notebooks remain unchanged.
 
 Open [01_dataset_understanding.ipynb](notebooks/01_dataset_understanding.ipynb)
@@ -90,7 +100,8 @@ It recomputes the tested audit and explains schema, labels, count differences,
 timestamp availability and pending lineage questions without altering inputs.
 See [notebook setup and execution](notebooks/README.md) for optional
 dependencies and the command for execution without an interactive editor.
-The existing root-level EDA notebook remains unchanged.
+The root-level EDA notebook's analysis code and saved outputs are preserved;
+its Markdown now clarifies the provisional UTC interpretation and links the addendum.
 
 ## Source-to-database diagnostics
 

@@ -1170,3 +1170,263 @@ the actual team repository/branch and Drive destination, publish only the
 listed code/docs/notebooks, and share the small artifact bundle with its
 checksum plus actual code commit. Walk teammates through the combined notebook
 and AP-2 proposal; Nitendra/Marco retain their implementation ownership.
+
+## 2026-11-17: Assignment 4.1 background section draft
+
+**Current task:** BACK-01, report-background drafting. Gaurav supplied the
+assignment rubric and Downloads/AAI590 Capstone Project Template.docx.
+Read the template's Section 3 Literature Review, narrative-writing and APA 7
+requirements, plus its page/style XML. Kept the original DOCX unchanged.
+This section addresses existing work, not our methods, parameter choices or
+project findings; no model implementation ownership changed.
+
+**Files/deliverables:** Created docs/assignment_4_1_background.md (editable
+manuscript), docs/assignment_4_1_review_notes.md (rubric mapping/limits) and
+output/pdf/AAI590_Assignment_4_1_Background_Draft.pdf. Updated checklist and
+this log. The PDF has two pages of connected literature-review prose and
+one Works Cited page, with 12 alphabetical primary references. Covers O-RAN,
+signature/anomaly/protocol analysis, radio datasets, random forests, GRU/TCN
+development, published intrusion-classification examples, evaluation bias,
+calibration and selective prediction. Distinguishes non-radio evidence from
+proof of performance on radio telemetry. Does not declare finalized teammate
+models, new study settings, novelty or experimental results.
+
+**Checks/results:** Verified publisher/proceedings/author/NIST/arXiv sources,
+including Cao/Song study contexts and the Polese final paper's actual
+1376-1411 page range. Content checks passed for 12 alphabetical references,
+no first-person project-method claims and no internal split/count/cutoff
+details. Used ReportLab with embedded Times New Roman and source-template
+page/body conventions; this is a standalone section, not a populated full
+report. Read final PDF back with pypdf, rendered all three pages with
+pdftoppm and visually inspected every page. Removed an almost-empty overflow
+page during layout revision. Final layout/text checks passed. Evidence:
+results/assignment_4_1_background_validation_2026-11-17.json.
+
+PDF packages were installed into ignored results/assignment41_work/deps
+with approved network escalation after sandbox failure. Renderer initialization
+and required artifact marker needed approved escalation; the original template
+and research environments were not edited. Temporary builder and page PNGs
+remain in that ignored work directory. No research pytest rerun because
+project code did not change; prior suite remains 89 passed in 0.71s.
+
+**Status/next action:** BACK-01 remains in progress as an unreviewed assignment
+draft. Gaurav should review content/citations and any instructor-specific
+identification/length expectations before uploading the PDF to Canvas. No
+submission occurred. REPORT-01 and empirical research gates are unchanged.
+Existing dated Drive bundle is not rebuilt; these new report files are not
+represented as part of that earlier snapshot.
+
+## 2026-11-17: Assignment 4.1 revision following supplied review
+
+**Current task:** BACK-01. Gaurav requested two directly relevant O-RAN
+sources, a shorter model discussion and closer article-template formatting.
+Verified the Fard/Komarov/Wunder arXiv record and full HTML, and the Wen et al.
+NDSS-hosted record plus full PDF. The latter is a FutureG 2026 workshop paper
+(DOI 10.14722/futureg.2026.23040), not labeled an NDSS main-conference paper.
+No literature assumptions were silently adopted as experimental methodology.
+
+**Content changes:** Added the cross-layer detection study with metric-specific
+fusion findings, its paired-test qualification and representation/testbed/
+clock limitations. Added TELERAN's telemetry-availability motivation and
+distinguished acquisition from evaluation under restricted visibility. Shortened
+generic IDS, random forest, GRU/TCN and calibration/selective-classification
+background; removed Chung, leaving 13 alphabetical references. Retained brief
+abstention context because it is Gaurav's approved responsibility, without
+promising a confidence-based gate or implemented calibration. All text remains
+existing-work background, not our own methods/results or a novelty claim.
+
+**Formatting correction:** The initial template inspection missed section
+transitions. Inspection of all sectPr elements establishes one initial column,
+three author columns and TWO columns in the main body, with 480-twip/24-point
+gutter. Rebuilt the standalone section using that main-body layout, 240-point
+columns and 12-point embedded Times New Roman. References flow continuously
+through the columns instead of a forced new-page break. Retained hanging
+indents/journal-volume italics; measured URL line breaks preserve all full
+hyperlink targets. Kept reference entries together within columns. Fixed a
+URL overflow and near-empty fourth page during render iterations.
+
+**Files/checks:** Updated docs/assignment_4_1_background.md, review notes,
+the PDF at output/pdf/AAI590_Assignment_4_1_Background_Draft.pdf, checklist and
+this log. Prior PDF/text preserved in ignored results/assignment41_work/.
+Final PDF is three pages; all three rendered pages visually inspected with
+no clipping/overlap. Content checks passed for 11 literature paragraphs,
+13 alphabetical references and all 13 intact URL targets. Verified unchanged
+original DOCX and exact final-section column/gutter settings. Evidence:
+results/assignment_4_1_background_revision_2_validation_2026-11-17.json.
+Required PDF edit marker and rendering used approved escalation for external
+tool settings. No research-code change/pytest rerun or empirical experiment.
+
+**Status/next action:** BACK-01 remains in progress for user/instructor review
+and submission. No Canvas upload occurred. Review the revised PDF; source
+template remains unchanged, and earlier Drive snapshot has not been rebuilt.
+Research scope, approved clock/cohort/split policies, numerical policy settings
+and teammate implementation ownership remain unchanged.
+
+## 2026-11-17: Title and author block correction requested
+
+Gaurav identified that the section-only PDF omits the template's article title
+and member blocks. Reinspected the reference front matter: centered 18-point
+title, optional subtitle, then three author columns containing name, program,
+school/university and email, followed by the two-column article body. The
+revised PDF has not yet been changed in this follow-up. BACK-01 remains in
+progress; the missing front matter is a correction still to deliver.
+
+Known member first names are Gaurav, Nitendra and Marco. Requested their full
+names and desired USD emails, with first-name-only formatting available if
+preferred. Use the existing project working title unless Gaurav supplies a
+replacement. Do not invent surnames or addresses. Next action after that
+input is to add the title and three member blocks, preserve the literature
+content and visually check the new pagination before delivering the PDF.
+
+## 2026-11-17: Title and supplied author names added
+
+Gaurav requested names only and supplied Gaurav SS, Marco Gonzalez Ortiz and
+Nitendra Tiwari. Added docs/assignment_4_1_front_matter.json with those exact
+names and the existing working project title/subtitle. Generated
+output/pdf/AAI590_Assignment_4_1_Background_With_Title_and_Authors.pdf with
+centered 18-point title, 14-point subtitle and three name blocks above the
+two-column literature review. No email addresses or affiliations invented.
+
+The old PDF could not be overwritten (PermissionError), so the corrected
+version uses a new filename; verified the old PDF remains unchanged. The
+literature Markdown is byte-identical to revision 2. Adjusted front-matter
+and reference paragraph spacing to avoid a nearly empty fourth page, retaining
+12-point body/references and all 13 complete reference hyperlink targets.
+Final version is three pages. Rendered and visually inspected all three pages;
+verified title/subtitle, supplied names exactly once on page 1, no email,
+front matter before Section 3, reference targets and unchanged manuscript.
+Evidence: results/assignment_4_1_background_revision_3_validation_2026-11-17.json.
+
+Updated review notes, checklist deliverable/evidence and this log. BACK-01
+remains in progress for review/submission. No research-code or experiment
+change and no pytest rerun; document/content/render checks were the relevant
+validation. No upload or submission occurred. Next action: review the new
+title-and-authors PDF rather than the earlier section-only filename.
+
+## 2026-11-17: Vendor-restricted visibility confirmed as the primary scope
+
+**User decision/current task:** Gaurav selected Yes—vendor-restricted visibility
+is primary for the explicit question about reliable intrusion detection with
+vendor-restricted telemetry subsets and when to abstain. Recorded D022 as
+Gaurav's intended priority, not an asserted team/instructor scope approval.
+This session aligns documents/planning; it implements no restriction experiment.
+
+**Changes/files:** Added docs/research_scope.md as the framing reference, with
+structural absence distinguished from report failure and unknown provenance.
+Updated README, protocol v1.1, threat model v1.1, policy v0.3, AP-2 proposal,
+decisions, milestones, team dependencies, handoff notice, checklist and this
+log. Shortcut checks now explicitly support evaluation validity; dropped/stale
+report conditions are secondary and separately justified. Required K cannot
+silently shrink to disguise an unavailable measurement. No real vendor profile,
+minimum input set, model/retraining treatment or producer API is adopted.
+
+Added not-started CAP-01 (capability evidence), CAP-02 (restriction protocol
+review) and VEND-01 (restricted-visibility evaluation) to the checklist.
+Updated M3/M5 priorities and retained ROB-01 as secondary. Foundational
+EP-1–EP-6/AP-1 approvals and historical evidence remain; they do not approve
+the missing restriction extension. No task completes on this clarification.
+
+**Report alignment:** Updated editable front matter to the working title
+Intrusion Detection with Vendor-Restricted O-RAN Telemetry and subtitle
+Reliability and Abstention under Limited Measurement Visibility, subject to
+team/instructor review. Generated a new three-page PDF:
+output/pdf/AAI590_Assignment_4_1_Vendor_Restricted_Telemetry.pdf. Preserved the
+three exact member names, unchanged literature text and 13 full reference URL
+targets. Updated report review notes; earlier PDFs remain historical. No
+methodology/results text was inserted into the existing-work background.
+
+**Checks/results:** 55 local document links, checklist IDs/columns/statuses,
+19 unchanged code/test hashes and three unchanged cohort/window/split manifest
+hashes passed. Verified unchanged literature manuscript against prior evidence.
+Read the new PDF back, checked title/names/13 links and visually inspected all
+three rendered pages with no clipping. Evidence:
+results/scope_alignment_validation_2026-11-17.json. PDF marker/rendering used
+approved escalation. No research pytest rerun because no research code changed;
+last suite remains 89 passed in 0.71s. No data/model/policy experiments or
+remote messages/uploads. The earlier Drive ZIP was not rebuilt and is
+explicitly labeled as a pre-clarification artifact snapshot.
+
+**Dependencies/next action:** CAP-01 is next: prepare a source-backed telemetry
+capability inventory with implementation/version/interface context and explicit
+unknowns. Hypothetical profiles must be labeled hypothetical. CAP-02 needs
+Gaurav review plus relevant Nitendra/Marco agreement before experiments. Their
+implementation ownership is unchanged; do not substitute further shortcut or
+degradation work for the missing primary capability evidence.
+
+## 2026-11-24: Implemented professor EDA feedback follow up
+
+**Current milestone/task:** M1/M3, EDA-01. Gaurav authorized the focused
+descriptive/interpretation update before handoff. Primary scope remains
+vendor-restricted visibility; this does not replace CAP-01 or transfer
+Nitendra's model/learned-preprocessing work to Gaurav.
+
+**Implementation/files:** Added src/reliability/eda_summary.py and five
+meaningful synthetic tests. Computes finite/missing/invalid counts, sample
+SD, linear percentiles, median/IQR for 17 audit metrics and per-category
+subsets of full/primary/secondary/primary-training populations. Reports
+paired BLER correlations by category and primary file, preserving undefined
+constant-input cases. Uses existing timing/window diagnostics for raw-step
+and window-span distributions. Verifies 50 inputs and artifact relationships,
+complete row references and timing coverage; all access is read-only.
+CLI output: results/eda_summary_2026-11-24.json.
+
+Created docs/eda_cleaning_addendum.md with actual statistics, interpretations,
+cleaning-operation ledger, leakage/semantic limitations and owner-specific
+handoff implications. It remains a draft for Gaurav review. Added Part 4 to
+notebooks/00_combined_dataset_audit.ipynb, preserving the original 23 code
+cells and appending one descriptive cell. Added only Markdown clarifications
+to the root legacy EDA, preserving all its code and saved outputs: UTC/date
+views are historical/provisional, not adopted EP-3 clock semantics. Original
+notebooks 01-03 remain byte-for-byte unchanged. Pre-edit notebook backups are
+in ignored results/ with the November 24 date.
+
+**Actual findings:** Full-database pooled BLER r=0.9719, primary r=0.9755,
+primary-training r=0.9749; scenario/file associations vary. Only 38 of 40
+primary-file correlations are defined, spanning approximately 0.0230-0.9884.
+No safe redundancy/feature-dropping claim follows. Training CQI IQR is zero
+but range is 13-15. Stored byte measurements are skewed; no rate conversion
+is adopted. Primary timing has 87 streams, 43,617 comparable adjacent pairs
+(40,075 at raw step 1,000), largest raw step 143,993. Complete-window span
+median is 9,000, range 8,998-150,147. No loss/staleness/physical-time cause is
+inferred from these spans; secondary clocks stay outside temporal analysis.
+
+**Tests/checks:** Final `.\.venv\Scripts\python.exe -m pytest -q` returned
+**94 passed in 1.12s**. Initial new percentile test used strict float equality;
+changed its assertion to numerical tolerance without changing the estimator.
+Ran CLI on actual inputs successfully. Fresh rocm-jupyter execution from
+notebooks/ completed all 24 code cells in 64.81s with no cell errors; full
+summary content matches CLI. Verified legacy code/output identity, original
+23 combined source cells, three original notebook hashes, notebook format
+and 37 document links. Evidence:
+results/eda_feedback_notebook_validation_2026-11-24.json. Notebook kernel-history
+was disabled for sandbox execution as before. Existing raw data and fixed
+manifests remain unchanged. No model, feature selection or policy experiment.
+
+**Tracking/docs:** Updated D023, checklist, README/notebook/test usage,
+handoff notice and audit-findings cross-reference. EDA-01 remains in progress
+only for Gaurav's interpretation review; broader DATA-01/provenance and
+CAP-01/CAP-02 statuses are unchanged. The dated Drive ZIP was not rebuilt;
+current code/notebook regenerates this follow-up from its existing parents.
+
+**Recommended next step:** Review Part 4 and the addendum before handoff;
+then resume CAP-01 capability evidence. Agree model/required-KPI and observable
+mask contracts with Nitendra/Marco; use training-only fitting for any later
+feature-selection/preprocessing decision. No rerun is required to inspect
+the already executed combined notebook.
+
+## 2026-11-24: Clarified supplemental Drive handoff
+
+Gaurav asked whether the new Drive folder/upload/restore instructions were
+documented. The guide mentioned the follow-up but did not specify the exact
+supplemental layout. Added a November 24 EDA update subsection to docs/handoff.md
+with the EDA_Update_2026-11-24 folder, two JSON filenames, local source paths,
+recipient restore destination and requirement to obtain matching current code.
+Updated results/README.md and linked the subsection from the root README.
+
+The original three-file November 16 package stays unchanged; its checksum
+does not cover the supplement. No duplicate raw-data upload or archive rebuild
+is needed. Added the notebook-presentation issue Gaurav raised as a remaining
+review item, separate from successful execution validation. No upload or push
+was performed or claimed. HAND-01 remains in progress; other research task
+statuses unchanged. Documentation link/filename checks are recorded in the
+current session; no code change or pytest rerun.

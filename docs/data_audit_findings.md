@@ -111,3 +111,10 @@ record lineage. DoS cannot be explained by simply counting timestamped
 source objects: the database has 792 more DoS rows than that count. The
 immediate next task remains diagnostic matching with explicit multiplicity
 and unmatched records, not defining runs or starting model comparisons.
+
+## Descriptive follow up on professor feedback
+
+The [November 24 addendum](eda_cleaning_addendum.md) adds cohort-labelled
+statistics, class/source BLER associations, raw-unit window-span interpretation
+and an explicit cleaning ledger. Historical investigation gates above remain
+dated context; use the current checklist and protocol for adopted decisions.

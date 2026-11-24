@@ -321,3 +321,42 @@ agree before any adapter or configured policy depends on those choices.
 AP-2 through AP-4 remain pending. No numerical settings, evaluation definitions
 or team interfaces changed, and no teammate messages were sent.
 
+## D022 - 2026-11-17: Vendor-restricted visibility confirmed as primary
+
+Gaurav selected **Yes—vendor-restricted visibility is primary (Recommended)**
+for: how reliably can intrusion detection operate when O-RAN vendor
+implementations expose only a restricted telemetry subset, and when should
+it abstain? Shortcut checks support evaluation validity; dropped/stale-report
+experiments are secondary and need separate justification. This records
+Gaurav's intended priority, not an official team/instructor scope change.
+
+Align current title, scope and work plan with that priority. Retain historical
+titles/notes, completed audits and approved EP-1–EP-6/AP-1 foundations rather
+than reinterpreting them as vendor evidence. No vendor capability matrix,
+restriction profiles, minimum telemetry set or final comparison protocol has
+been established. CAP-01/CAP-02 now define the primary evidence/review path.
+No raw data, population, clock interpretation, windows, splits, metric formula,
+policy cutoff, model strategy or producer contract changes in this amendment.
+
+Working title for alignment is Intrusion Detection with Vendor-Restricted
+O-RAN Telemetry, subject to team/instructor review. Structural absence of a
+required measurement must not be hidden by silently shrinking K. An agreed
+compatible reduced-input model or explicit abstention needs specification.
+Model/calibration and degradation/playback ownership remain Nitendra/Marco's.
+
+## D023 - 2026-11-24: Descriptive EDA feedback follow up
+
+Gaurav authorized the focused professor-feedback update. Add reproducible
+descriptive summaries and a cleaning/interpretation ledger, with distinct
+full, primary, secondary and primary-training populations. Use the existing
+fixed manifests and raw-unit timing diagnostics. No model feature removal,
+physical bounds, vendor profile, clock interpretation or operating threshold
+is adopted. Quantiles use linear interpolation at (n-1)p and SD is sample SD.
+
+Clarify legacy UTC/calendar outputs as provisional, preserving their code and
+saved results. Append a cohort-aware section to the combined notebook while
+retaining its original 23 audit code cells. Use correlations as descriptive
+evidence, not redundancy or causality claims. Learned preprocessing/model
+selection stays training-only and Nitendra-owned. CAP-01 remains the primary
+next task; this feedback does not replace the vendor-visibility objective.
+

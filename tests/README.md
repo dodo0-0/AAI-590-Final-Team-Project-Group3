@@ -54,3 +54,8 @@ versus unknown masks, optional KPI exclusion, actual tail denominator, partial
 unknown counts, duplicate/out-of-grid configuration guards, strict mask values
 and order invariance. Inputs are synthetic pre-imputation masks; the tests do
 not establish KPI validity, mask provenance or operational observability.
+
+`test_eda_summary.py` checks hand-computed linear percentiles/sample SD,
+missing versus invalid values, paired/undefined correlations, large-offset
+stability and parent/timing snapshot guards. Descriptive associations do not
+constitute feature selection, independent-run evidence or vendor profiles.

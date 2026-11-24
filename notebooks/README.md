@@ -80,6 +80,12 @@ Original code cells are unchanged; the three original notebooks are preserved.
 Optional pytest metadata may be absent without blocking interactive execution.
 No model training, degradation generation or abstention policy is run.
 
+The November 24 follow-up adds Part 4 with cohort-labelled descriptive
+statistics, full/class/source BLER associations and raw-unit timing summaries.
+There are now 24 code cells: the original 23 unchanged cells plus one EDA
+summary cell. It requires the restored cohort/window/split/timing artifacts
+under results/. Read [the cleaning addendum](../docs/eda_cleaning_addendum.md).
+
 Original narratives describe the investigation at each stage. Historical
 pending decisions do not override later approved protocol/policy documents
 or planning/checklist.md. Saving outputs changes only the combined notebook.

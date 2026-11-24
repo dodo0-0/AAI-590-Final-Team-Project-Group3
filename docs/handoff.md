@@ -1,5 +1,26 @@
 # Gaurav workstream handoff - 2026-11-16
 
+**Scope update 2026-11-17:** Read [the current research scope](research_scope.md)
+before this historical handoff snapshot. Vendor-restricted visibility is primary;
+capability evidence/profile review (CAP-01/CAP-02) now lead the work plan.
+The dated ZIP remains an unchanged data/artifact snapshot. Its method-document
+hashes predate this clarification; current docs need their actual code revision.
+
+**EDA feedback update 2026-11-24:** Read the
+[cleaning and interpretation addendum](eda_cleaning_addendum.md). The combined
+notebook now has a fourth descriptive section. Use it instead of treating the
+legacy UTC plots as approved temporal results. The dated ZIP still supplies
+raw data and parent manifests; it does not contain the new summary/helper.
+The follow-up's full suite passed 94 tests; the refreshed combined notebook
+completed 24 cells in a fresh kernel. Earlier 89-test/23-cell records below
+describe the dated handoff snapshot.
+
+The exact supplemental Drive layout and restore steps are in
+[November 24 EDA update](#november-24-eda-update) below. Execution was checked,
+but Gaurav has raised a notebook-presentation concern; review that before
+publishing the updated combined notebook. Code/docs and the JSON supplement
+can be shared separately.
+
 Start here, then consult [the checklist](../planning/checklist.md), the sole
 task-status authority. This is a handoff of methodology and tested support
 utilities, not a completed detector or finished capstone. Nothing has been
@@ -73,6 +94,47 @@ code generated/consumes the artifacts. These commands are guidance, not an
 executed push.
 
 ## 2. What to upload to Drive
+
+### November 24 EDA update
+
+Keep the three November 16 files already shown in the team Drive unchanged.
+Create a new subfolder and upload these two local results files:
+
+```text
+Team Drive folder/
+  AAI590_shared_artifacts_2026-11-16.zip
+  handoff_package_manifest_2026-11-16.json
+  SHA256SUMS.txt
+  EDA_Update_2026-11-24/
+    eda_summary_2026-11-24.json
+    eda_feedback_notebook_validation_2026-11-24.json
+```
+
+Both new files are currently in the local project results/ directory.
+The summary contains descriptive statistics/correlations and raw-unit timing;
+the validation file records the fresh notebook run, tests and preservation
+checks. Upload of this supplement has not been confirmed. The old checksum
+file covers the original package, not these two additional files; keep it
+unchanged rather than suggesting it verifies the supplement.
+
+Teammates restore the original ZIP into a fresh project checkout, then copy
+the two supplemental JSON files into that checkout's results/ directory:
+
+```text
+project/
+  data/radio/Lower_Layer_Data.db
+  results/eda_summary_2026-11-24.json
+  results/eda_feedback_notebook_validation_2026-11-24.json
+```
+
+Other original result/manifest files remain under results/ as restored from
+the ZIP. Obtain current code/docs from the matching GitHub revision; the old
+bundle does not contain the new helper or Part 4. Do not upload data/radio/
+again, replace/rebuild the original ZIP, or commit result JSON to GitHub for
+this supplement. Once the notebook presentation is reviewed, publish its
+updated version alongside the helper that Part 4 imports.
+
+### Original November 16 package
 
 The prepared local handoff/ directory contains a shared-artifacts ZIP, its
 SHA256SUMS.txt and an inventory manifest. Upload those three files into a
@@ -163,8 +225,8 @@ support. Neither data volume nor repeated windows fixes these limitations.
 | Owner | Read first | First action |
 | --- | --- | --- |
 | Nitendra | Evaluation protocol sections 4-7; fixed split/window artifacts; AP-2 input proposal | Agree required/optional model inputs, validity, score semantics and short-window support; then own model/preprocessing/calibration implementation using fixed groups |
-| Marco | Threat model sections 3/5; evaluation protocol section 10; AP-2 proposal | Agree fixed-grid pairing, observable masks/expected counts and justified scenarios; then own degradation/playback implementation |
-| Gaurav | Abstention policy sections 5/7; checklist; AP-2 proposal | Record input agreements; define AP-3 security/coverage constraints/search before selecting policy settings; finish evaluation/policy utilities incrementally |
+| Marco | Current scope; threat model sections 3/5; AP-2 proposal | Discuss structural measurement absence versus report failure and profile alignment; retain ownership of separately justified degradation/playback |
+| Gaurav | Current scope; CAP-01/CAP-02; abstention policy/AP-2 | Establish capability evidence; obtain restriction/required-input review; record agreements and AP-3 constraints before numerical settings |
 
 The detailed [AP-2 proposal](abstention_input_proposal.md) is not an agreed API.
 Do not tell producers they must implement a finalized schema. No assistant
